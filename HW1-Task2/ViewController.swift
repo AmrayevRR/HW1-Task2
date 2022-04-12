@@ -73,19 +73,19 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
         layoutFullNameLabel()
         layoutEmailLabel()
         layoutFirstSeparator()
-        layoutLabelWithSwitch(label: pushLabel, text: "Push уведомления", separator: firstSeparator)
+        layoutLabelWithSwitch(label: pushLabel, text: "Push уведомления", separatorTop: firstSeparator)
         layoutSwitchWithLabel(mySwitch: pushSwitch, label: pushLabel, action: #selector(pushSwitchValueDidChange))
         layoutSeparatorUnderLabel(separator: secondSeparator, label: pushLabel)
         layoutStackWithLeftArrow(stack: passwordStack, label: changePasswordLabel, text: "Изменить пароль", action: #selector(handlePasswordStackTap), separatorTop: secondSeparator)
         layoutSeparatorUnderStack(separator: thirdSeparator, stack: passwordStack)
         layoutStackWithLeftArrow(stack: codeStack, label: changeCodeLabel, text: "Изменить код быстрого доступа", action: #selector(handleCodeStackTap), separatorTop: thirdSeparator)
         layoutSeparatorUnderStack(separator: fourthSeparator, stack: codeStack)
-        layoutLabelWithSwitch(label: entryLabel, text: "Вход с Face/Touch ID", separator: fourthSeparator)
+        layoutLabelWithSwitch(label: entryLabel, text: "Вход с Face/Touch ID", separatorTop: fourthSeparator)
         layoutSwitchWithLabel(mySwitch: entrySwitch, label: entryLabel, action: #selector(entrySwitchValueDidChange))
         layoutSeparatorUnderLabel(separator: fifthSeparator, label: entryLabel)
         layoutStackWithLeftArrow(stack: phoneStack, label: phoneLabel, text: "Изменить номер телефона", action: #selector(handlePhoneStackTap), separatorTop: fifthSeparator)
         layoutSeparatorUnderStack(separator: sixthSeparator, stack: phoneStack)
-        layoutLabelWithSwitch(label: exitLabel, text: "Выход", separator: sixthSeparator)
+        layoutLabelWithSwitch(label: exitLabel, text: "Выход", separatorTop: sixthSeparator)
         layoutSeparatorUnderLabel(separator: seventhSeparator, label: exitLabel)
         
         configureExitLabel()
@@ -158,12 +158,12 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
         }
     }
     
-    private func layoutLabelWithSwitch(label: UILabel, text: String, separator: UIView) {
+    private func layoutLabelWithSwitch(label: UILabel, text: String, separatorTop: UIView) {
         label.text = text
         label.textColor = .gray
         
         label.snp.makeConstraints {
-            $0.top.equalTo(separator.snp.bottom).offset(20)
+            $0.top.equalTo(separatorTop.snp.bottom).offset(20)
             $0.leading.equalToSuperview().offset(15)
         }
     }

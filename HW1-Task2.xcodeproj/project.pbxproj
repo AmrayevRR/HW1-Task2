@@ -14,6 +14,8 @@
 		3451E2372804B42E0002776A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3451E2362804B42E0002776A /* Assets.xcassets */; };
 		3451E23A2804B42E0002776A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3451E2382804B42E0002776A /* LaunchScreen.storyboard */; };
 		3451E258280538BF0002776A /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3451E257280538BF0002776A /* ChangePasswordViewController.swift */; };
+		3451E25B280588A50002776A /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3451E25A280588A40002776A /* CustomTextField.swift */; };
+		3451E25E280588EF0002776A /* UnderlinedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3451E25D280588EF0002776A /* UnderlinedLabel.swift */; };
 		E3A5A3D0A73AFD727BED3762 /* Pods_HW1_Task2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10710A1D585396CB2F2FF511 /* Pods_HW1_Task2.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +30,8 @@
 		3451E2392804B42E0002776A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3451E23B2804B42E0002776A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3451E257280538BF0002776A /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		3451E25A280588A40002776A /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		3451E25D280588EF0002776A /* UnderlinedLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlinedLabel.swift; sourceTree = "<group>"; };
 		830E72421B8AB51003B91175 /* Pods-HW1-Task2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HW1-Task2.release.xcconfig"; path = "Target Support Files/Pods-HW1-Task2/Pods-HW1-Task2.release.xcconfig"; sourceTree = "<group>"; };
 		E3319A4E1BE2772647E19CE9 /* Pods-HW1-Task2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HW1-Task2.debug.xcconfig"; path = "Target Support Files/Pods-HW1-Task2/Pods-HW1-Task2.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +77,8 @@
 				3451E2382804B42E0002776A /* LaunchScreen.storyboard */,
 				3451E23B2804B42E0002776A /* Info.plist */,
 				3451E257280538BF0002776A /* ChangePasswordViewController.swift */,
+				3451E25A280588A40002776A /* CustomTextField.swift */,
+				3451E25D280588EF0002776A /* UnderlinedLabel.swift */,
 			);
 			path = "HW1-Task2";
 			sourceTree = "<group>";
@@ -212,6 +218,8 @@
 				3451E258280538BF0002776A /* ChangePasswordViewController.swift in Sources */,
 				3451E22E2804B4260002776A /* AppDelegate.swift in Sources */,
 				3451E2302804B4260002776A /* SceneDelegate.swift in Sources */,
+				3451E25E280588EF0002776A /* UnderlinedLabel.swift in Sources */,
+				3451E25B280588A50002776A /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
