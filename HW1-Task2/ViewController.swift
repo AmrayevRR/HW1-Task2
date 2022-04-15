@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
+class ViewController: UIViewController {
     
     let backgroundColor = UIColor(red: 247, green: 247, blue: 247, alpha: 1)
     
@@ -293,10 +293,14 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
         let picker = UIImagePickerController()
         
         picker.delegate = self
+        picker.sourceType = .photoLibrary
         picker.allowsEditing = true
         
         present(picker, animated: true, completion: nil)
     }
+}
+
+extension ViewController: UIImagePickerControllerDelegate & UINavigationControllerDelegate {
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
